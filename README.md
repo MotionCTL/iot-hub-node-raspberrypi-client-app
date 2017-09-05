@@ -22,14 +22,17 @@ Follow [this page](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gp
 Check your nodejs version on your Pi:
 
 ```bash
-node -v
+pi@raspberrypi:~ $ node -v
 ```
 
 If your nodejs' version is below v4.x, please follow the instruction to install a new version of nodejs
 
 ```bash
-curl -sL http://deb.nodesource.com/setup_4.x | sudo -E bash
-sudo apt-get -y install nodejs
+pi@raspberrypi:~ $ curl -sL http://deb.nodesource.com/setup_4.x | sudo -E bash
+pi@raspberrypi:~ $ sudo apt-get install -y nodejs npm
+pi@raspberrypi:~ $ sudo npm cache clean
+pi@raspberrypi:~ $ sudo npm install npm n -g
+pi@raspberrypi:~ $ sudo n stable
 ```
 
 ## Connect your sensor with your Pi
@@ -49,7 +52,9 @@ You can use the application to simulate temperature&humidity data and send to yo
 Install all packages by the following command:
 
 ```bash
-npm install
+pi@raspberrypi:~ $ git clone https://github.com/еее/iot-hub-node-raspberrypi-client-app
+pi@raspberrypi:~ $ cd iot-hub-node-raspberrypi-client-app
+pi@raspberrypi:~/iot-hub-node-raspberrypi-client-app $ sudo npm install
 ```
 
 ### Run your client application
