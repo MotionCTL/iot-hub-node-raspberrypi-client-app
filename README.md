@@ -36,7 +36,7 @@ pi@raspberrypi:~ $ sudo n stable
 ```
 
 ## Connect your sensor with your Pi
-### Connect with a physical BEM280 sensor and LED
+### Connect with a physical BME280 sensor and LED
 You can follow the image to connect your BME280 and a LED with your Raspberry Pi 3.
 
 ![BME280](https://docs.microsoft.com/en-us/azure/iot-hub/media/iot-hub-raspberry-pi-kit-node-get-started/3_raspberry-pi-sensor-connection.png)
